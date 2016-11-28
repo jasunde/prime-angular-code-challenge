@@ -29,7 +29,11 @@
 </head>
 <body ng-app="HeroApp">
   <div class="container">
+    <div class="page-header">
     <h1>Department of Emerging Superhero Knowledge</h1>
+    </div>
+
+    <div class="row" ng-include="'app/nav/navView.html'"></div>
 
     <main ng-view></main>
   </div>

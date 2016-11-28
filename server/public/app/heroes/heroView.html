@@ -1,6 +1,6 @@
-<h1>List of Heroes</h1>
+<h2>List of Heroes</h2>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Persona</th>
@@ -12,11 +12,11 @@
   </thead>
   <tbody>
     <tr ng-repeat="hero in heroes">
-      <td><input type="text" ng-model="hero.persona"></td>
-      <td><input type="text" ng-model="hero.alias"</td>
+      <td><input class="form-control" type="text" ng-model="hero.persona"></td>
+      <td><input class="form-control" type="text" ng-model="hero.alias"</td>
       <td>{{hero.name}}</td>
-      <td><button ng-click="updateHero(hero)">Update</button></td>
-      <td><button ng-click="deleteHero(hero)">Delete</button></td>
+      <td><button class="btn btn-warning" ng-click="updateHero(hero)">Update</button></td>
+      <td><button class="btn btn-danger" ng-click="deleteHero(hero)">Delete</button></td>
     </tr>
   </tbody>
 </table>
