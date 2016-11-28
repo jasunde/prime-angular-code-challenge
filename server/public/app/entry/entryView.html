@@ -1,0 +1,11 @@
+<h1>Make an Entry</h1>
+<form ng-submit="addHero()">
+  <label for="persona">Persona:</label>
+  <input type="text" name="persona" id="persona" ng-model="newHero.persona">
+  <label for="alias">Alias:</label>
+  <input type="text" name="alias" id="alias" ng-model="newHero.alias">
+  <label for="power_id">Super Power:</label>
+  <select name="power_id" id="power_id" ng-model="newHero.power_id" ng-options="power.id as power.name for power in powers">
+  </select>
+  <button type="submit">Submit</button>
+</form>
