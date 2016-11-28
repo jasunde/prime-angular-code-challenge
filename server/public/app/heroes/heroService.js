@@ -11,7 +11,7 @@ angular.module('HeroApp')
         return $http.delete('/heroes/' + hero.id);
       },
       put: function (hero) {
-        return $http.put('/heroes' + hero.id, hero);
+        return $http.put('/heroes/' + hero.id, {persona: hero.persona, alias: hero.alias, power_id: hero.power_id});
       },
       powers: function () {
         return $http.get('/powers');

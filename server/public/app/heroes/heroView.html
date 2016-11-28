@@ -6,13 +6,17 @@
       <th>Persona</th>
       <th>Alias</th>
       <th>Super Power</th>
+      <th>Update</th>
+      <th>Delete</th>
     </tr>
   </thead>
   <tbody>
     <tr ng-repeat="hero in heroes">
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><input type="text" ng-model="hero.persona"></td>
+      <td><input type="text" ng-model="hero.alias"</td>
+      <td>{{hero.name}}</td>
+      <td><button ng-click="updateHero(hero)">Update</button></td>
+      <td><button ng-click="deleteHero(hero)">Delete</button></td>
     </tr>
   </tbody>
 </table>
